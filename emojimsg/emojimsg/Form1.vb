@@ -63,7 +63,7 @@ Public Class Form1
         outcome = Strings.Replace(Convert.ToString(outcome), " ", "  ")
         Me.TextBox2.Text = Convert.ToString(outcome)
         If TextBox2.Text IsNot "" Then
-            'Clipboard.SetText(TextBox2.Text)
+            Clipboard.SetText(TextBox2.Text)
         End If
     End Sub
 
