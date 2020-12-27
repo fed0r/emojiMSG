@@ -40,7 +40,7 @@ Public Class Form1
         outcome = Strings.Replace(Convert.ToString(outcome), "F", "🇫 ")
         outcome = Strings.Replace(Convert.ToString(outcome), "G", "🇬 ")
         outcome = Strings.Replace(Convert.ToString(outcome), "H", "🇭 ")
-        outcome = Strings.Replace(Convert.ToString(outcome), "J", "🇮 ")
+        outcome = Strings.Replace(Convert.ToString(outcome), "I", "🇮 ")
         outcome = Strings.Replace(Convert.ToString(outcome), "J", "🇯 ")
         outcome = Strings.Replace(Convert.ToString(outcome), "K", "🇰 ")
         outcome = Strings.Replace(Convert.ToString(outcome), "L", "🇱 ")
@@ -60,7 +60,11 @@ Public Class Form1
         outcome = Strings.Replace(Convert.ToString(outcome), "Z", "🇿 ")
         outcome = Strings.Replace(Convert.ToString(outcome), "?", "❓ ")
         outcome = Strings.Replace(Convert.ToString(outcome), "!", "❗ ")
+        outcome = Strings.Replace(Convert.ToString(outcome), " ", "  ")
         Me.TextBox2.Text = Convert.ToString(outcome)
+        If TextBox2.Text IsNot "" Then
+            'Clipboard.SetText(TextBox2.Text)
+        End If
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
